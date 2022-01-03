@@ -7,6 +7,8 @@ export default function Comments({ comments, removeComment }) {
     <List className="comments">
         <Typography variant="h4" component="h4" sx={{ fontSize: 20 }}>Отзывы:</Typography>
         {
+            comments.length
+            ?
             comments.map(comment => (
             <ListItem 
                 className="comment"
@@ -33,7 +35,7 @@ export default function Comments({ comments, removeComment }) {
                     } />
             </ListItem>
             ))
-        }
+        : <Typography component="span" className="comment-date">Комментариев нет</Typography>}
     </List>
   );
 }
