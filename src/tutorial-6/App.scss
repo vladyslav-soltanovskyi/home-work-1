@@ -1,0 +1,48 @@
+body {
+  background-color: #fcfcfc;
+}
+
+.form {
+  max-width: 360px;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 5px;
+
+  &-group {
+    margin-top: 20px; 
+  }
+}
+
+.comments {
+  width: 100%;
+  max-width: 360px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 20px !important;
+  overflow: auto;
+  max-height: 300px;
+}
+
+.comment {
+  margin-top: 20px;
+
+  &-head {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-date {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &-title {
+    flex-grow: 1;
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
