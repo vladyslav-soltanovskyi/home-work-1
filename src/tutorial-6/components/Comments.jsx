@@ -35,7 +35,7 @@ export default function Comments({ comments, removeComment }) {
                     } />
             </ListItem>
             ))
-        : <Typography component="span" className="comment-date">Комментариев нет</Typography>}
+        : <Typography component="span">Комментариев нет</Typography>}
     </List>
   );
 }
